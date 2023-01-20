@@ -1,0 +1,28 @@
+import random
+a = random.randint(1,100)
+def game(): 
+ print("enter 'q' to quit.")
+ while True: 
+  try:
+    b = int(input("guess the number between 1 and 100 :"))
+  except Exception as e:
+     print("game over")
+     break
+  if a > b:
+      print("guess high")
+  elif a < b :
+      print("guess low")
+  else:
+     print("you guessed number ")
+     break
+     
+game()
+d= input("do you want to play game again ? enter yes or no :")
+if d== 'yes':
+    game()
+elif d == 'no':
+    print("thank you")
+else:
+    print("invalid input")
+
+ 
